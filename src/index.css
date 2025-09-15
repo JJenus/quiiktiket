@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure mobile sidebar is completely hidden when off-screen */
+.sidebar-mobile {
+	transform: translateX(-100%);
+}
+
+.sidebar-mobile.open {
+	transform: translateX(0);
+}
+
+/* Prevent horizontal scrolling */
+body {
+	overflow-x: hidden;
+}
